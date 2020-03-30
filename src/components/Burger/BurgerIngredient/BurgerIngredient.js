@@ -16,7 +16,7 @@ class BurgerIngredient extends Component {
       ingredient = (
         <div className={styles.breadTop}>
           <div className={styles.seeds1}></div>
-          <div className={styles.seeds1}></div>
+          <div className={styles.seeds2}></div>
         </div>
       )
       break;

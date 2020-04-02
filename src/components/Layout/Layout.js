@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from '../Navigation/Navbar/Navbar'
 import styles from './Layout.module.css'
 
 const Layout = (props) => (
   <>
-  <div>Toolbar, SideDrawer, Backdrop</div>
+  <Navbar/>
   <main className={styles.content}>{props.children}</main>
   </>
 )

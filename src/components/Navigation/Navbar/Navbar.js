@@ -6,8 +6,8 @@ import NavigationItems from '../NavigationItems/NavigationItems'
 const Navbar = (props) => (
   <header className={styles.navbar}>
     <div>MENU</div>
-    <Logo/>
-    <nav>
+    <Logo height="80%"/>
+    <nav className={styles.desktop}>
       <NavigationItems/>
     </nav>
   </header>

@@ -1,9 +1,33 @@
 .navigationItem {
   box-sizing: border-box;
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.navigationItem a {
+  box-sizing: border-box;
+  color: #8F5C2C;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+}
+
+.navigationItem a:hover,
+.navigationItem a:active,
+.navigationItem a.active {
+  color: #40A4C8;
+}
+
+
+@media (min-width: 500px) {
+  .navigationItem {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   margin: 0;
   height: 100%;
+  width: auto;
 }
 
 .navigationItem a {
@@ -22,4 +46,6 @@
   background-color: #8F5C2C;
   border-bottom: 4px solid #40A4C8;
   color: white;
+}
+
 }

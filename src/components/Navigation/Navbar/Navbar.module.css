@@ -16,3 +16,9 @@
 .navbar nav {
   height: 100%;
 }
+
+@media (max-width: 499px) {
+  .desktop {
+    display: none;
+  }
+}

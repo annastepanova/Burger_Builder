@@ -25,3 +25,8 @@
 .close {
   transform: translateX(-100%);
 }
+
+.logo {
+  margin-bottom: 32px;
+  height: 11%;
+}

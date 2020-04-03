@@ -14,7 +14,7 @@ if (props.open) {
     <>
       <Backdrop show={props.open} clicked={props.closed}/>
       <div className={attachedStyles.join(' ')}>
-        <div className={styles.logo}><Logo /></div>
+        <div className={styles.logo}><Logo/></div>
         <nav>
           <NavigationItems/>
         </nav>

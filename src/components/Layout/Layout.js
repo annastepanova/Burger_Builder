@@ -6,7 +6,7 @@ import styles from './Layout.module.css'
 class Layout extends Component {
 
   state = {
-    showSideDrawer: true
+    showSideDrawer: false
   }
 
   sideDrawerClosedHandler = () => {
@@ -14,11 +14,23 @@ class Layout extends Component {
 
   }
 
+  sideDrawerToggleHandler = () => {
+    this.setState((prevState) => {
+      return {
+        showSideDrawer: !prevState.showSideDrawer
+      }
+    })
+  }
+
   render () {
     return (
       <>
-        <Navbar />
-        <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
+        <Navbar drawerToggleClicked={this.sideDrawerToggleHandler}/>
+        <SideDrawer 
+        open={this.state.showSideDrawer} 
+        closed={this.sideDrawerClosedHandler}
+        
+        />
         <main className={styles.content}>{this.props.children}</main>
       </>
     )

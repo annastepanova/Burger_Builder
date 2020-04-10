@@ -9,7 +9,6 @@ const Input = (props) => {
   if (props.invalid && props.shouldValidate && props.touched) {
     inputStyles.push(styles.invalid)
   }
-  console.log(inputStyles)
 
   switch (props.elementType) {
     case ('input'): 

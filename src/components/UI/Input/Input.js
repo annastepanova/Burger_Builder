@@ -32,12 +32,18 @@ const Input = (props) => {
     default:
     inputElement = <input className={inputStyles.join(' ')} {...props.elementConfig} value={props.value} onChange={props.changed}/>  
   }
+
+  let validationError = null;
+  if (props.invalid && props.touched) {
+    validationError = <p className={styles.validationError}>Please enter a valid {props.valueType}!</p>;
+  }
   
 
   return (
   <div className={styles.input}>
     <label className={styles.label}>{props.label}</label>
     {inputElement}
+    {validationError}
   </div>
   )
 }

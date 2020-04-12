@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Input from '../../UI/Input/Input'
 import Button from '../../UI/Button/Button'
+import styles from './Auth.module.css'
 
 
 class Aux extends Component {
@@ -98,7 +99,7 @@ class Aux extends Component {
     )
 
     return (
-      <div>
+      <div className={styles.auth}>
         <form>
           {form}
           <Button btnType="success">SUBMIT</Button>
